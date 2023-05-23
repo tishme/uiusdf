@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div
+      class="vh-100 container d-flex align-items-center justify-content-center"
+    >
+      <div class="wrapper px-3 py-4 rounded bg-info">
+        <div class="h1">Login</div>
+        <form action="authenticate.php" method="POST">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form-control"
+              placeholder="Enter Username"
+            />
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              placeholder="Enter Password"
+            />
+            <button type="submit" class="btn btn-primary mt-3">Login</button>
+          </div>
+        </form>
+
+        <div class="text-center">
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

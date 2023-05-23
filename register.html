@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <title>Registration</title>
+
+    <style>
+        
+    </style>
+  </head>
+  <body style="background:whitesmoke; color:black;
+  ">
+    <div class="vh-100 container d-flex align-items-center justify-content-center"  >
+      <div class="wrapper px-5 py-5 rounded " style="background: rgba(255, 255, 255, 0.13);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.8px);
+      -webkit-backdrop-filter: blur(3.8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+        <div class="h1 text-center">Registration</div>
+        <form action="register.php" method="POST">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form-control"
+              placeholder="Enter Username"
+            />
+            
+            <label for="email" class="form-label pt-3">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter Email"
+            /><div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="password" class="form-label pt-3">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              placeholder="Enter Password"
+            />
+            <label for="password2" class="form-label pt-4">Confirm Password</label>
+            <input
+              type="password"
+              name="password2"
+              id="password2"
+              class="form-control"
+              placeholder="Confirm Password"
+            />
+
+            <button type="submit" class="btn btn-primary mt-3">Register</button>
+
+
+      </div>
+    </div>
+  </body>
+</html>
